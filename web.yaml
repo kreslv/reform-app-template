@@ -1,0 +1,25 @@
+name: web
+alias: Application Model
+description: Web application template.
+categories:
+ - type: web
+   components:
+    - type: webservice
+      traits:
+       - type: scaler
+       - type: gateway
+       - type: sidecar
+       - type: service-account
+ - type: api
+   components:
+    - type: webservice
+      traits:
+       - type: scaler
+       - type: gateway
+       - type: sidecar
+       - type: service-account
+ - type: infrastructure
+   components:
+    - type: aws-s3
+    - type: aws-elb
+    - type: aws-rds
