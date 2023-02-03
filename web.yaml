@@ -10,7 +10,6 @@ categories:
        - type: gateway
        - type: sidecar
        - type: service-account
-       - type: service-binding
  - type: api
    components:
     - type: webservice
@@ -19,7 +18,6 @@ categories:
        - type: gateway
        - type: sidecar
        - type: service-account
-       - type: service-binding
  - type: infrastructure
    components:
     - type: aws-s3
