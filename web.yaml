@@ -10,6 +10,7 @@ categories:
        - type: gateway
        - type: sidecar
        - type: service-account
+       - type: storage
  - type: api
    components:
     - type: webservice
@@ -18,6 +19,7 @@ categories:
        - type: gateway
        - type: sidecar
        - type: service-account
+       - type: storage
  - type: infrastructure
    components:
     - type: aws-s3
