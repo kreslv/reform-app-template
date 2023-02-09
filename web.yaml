@@ -11,6 +11,9 @@ categories:
        - type: sidecar
        - type: service-account
        - type: storage
+ - type: web
+   components:
+    - type: web   
  - type: api
    components:
     - type: webservice
