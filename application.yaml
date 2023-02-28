@@ -1,0 +1,40 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  creationTimestamp: null
+  labels:
+    infinity.application/applicationName: test
+    infinity.application/deploymentNo: test-DP13
+    infinity.application/revision: 2023.02.3
+  name: test
+  namespace: uat
+spec:
+  components:
+  - name: test-test-web
+    properties:
+      addRevisionLabel: false
+      cpu: "0.5"
+      exposeType: ClusterIP
+      image: nginx
+      imagePullPolicy: IfNotPresent
+      memory: 19Mi
+      ports:
+      - expose: true
+        port: 80
+        protocol: TCP
+    type: webservice
+  policies:
+  - name: topology-clusters
+    properties:
+      clusters:
+      - local
+    type: topology
+  workflow:
+    steps:
+    - name: deploy
+      properties:
+        ignoreTerraformComponent: false
+        policies:
+        - topology-clusters
+      type: deploy
+status: {}
