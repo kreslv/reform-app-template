@@ -9,11 +9,11 @@ spec:
   - name: test-test-web
     properties:
       addRevisionLabel: false
-      cpu: "0.5"
+      cpu: "0.1"
       exposeType: ClusterIP
       image: nginx
       imagePullPolicy: IfNotPresent
-      memory: 19Mi
+      memory: 20Mi
       ports:
       - expose: true
         port: 80
