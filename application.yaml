@@ -4,8 +4,8 @@ metadata:
   creationTimestamp: null
   labels:
     infinity.application/applicationName: test
-    infinity.application/deploymentNo: test-DP14
-    infinity.application/revision: 2023.02.3
+    infinity.application/deploymentNo: test-DP15
+    infinity.application/revision: 2023.03.1
   name: test
   namespace: uat
 spec:
